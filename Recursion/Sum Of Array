@@ -1,0 +1,20 @@
+//GFG practice question
+
+class Get
+{
+    public static int sumElement(int arr[], int n)
+    {
+        if(n==0) return 0;
+        if(n==1)return arr[0];
+        
+        return helper(arr,0);
+    }
+    public static int helper(int arr[],int startIndex){
+        if(startIndex==arr.length-1)
+        return arr[startIndex];
+    
+        int ans = helper(arr,startIndex+1);
+        
+        return arr[startIndex] + ans;    
+    }
+}
