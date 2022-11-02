@@ -1,0 +1,25 @@
+// GFG Practice Question
+
+class Solution {
+    boolean arraySortedOrNot(int[] arr, int n) {
+        if(n==0 || n==1)
+        return true;
+        
+        return helper(arr,0);
+    }
+    boolean helper(int arr[], int Startindex){
+        
+        //Base Case --> 
+        if(Startindex == arr.length-1)  
+        return true;
+        
+        
+        //our work
+        if(arr[Startindex] > arr[Startindex+1])
+        return false;
+        
+        //recursion
+        boolean ans = helper(arr,Startindex+1);
+        return ans;
+    }
+}
