@@ -9,7 +9,7 @@ class Solution {
     }
     boolean helper(int arr[], int Startindex){
         
-        //Base Case --> 
+        //Base Case --> if only one element is given, array size is 1 (arr[] = {1}) and it's index is arr.length-1
         if(Startindex == arr.length-1)  
         return true;
         
