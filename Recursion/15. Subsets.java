@@ -57,3 +57,5 @@ class Solution {
         helper(nums,index+1,ans,subset);
     }
 }
+T.C :- O(2^n)
+S.C :- height of recursion tree O(n)
