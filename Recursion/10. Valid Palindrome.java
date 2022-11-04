@@ -6,6 +6,8 @@ class Solution{
         store = store.toLowerCase();
         return isPalindromeHelper(store,0,store.length()-1);
     }
+    
+    ////Recursion 
     public boolean isPalindromeHelper(String s, int first, int last){
         if(first>=last)
             return true;
@@ -14,4 +16,18 @@ class Solution{
         else
             return false;
     }
+    
+    ////Loop
+    public boolean isPalindromeHelper(String s, int first, int last){
+         while(first<=last){
+            if(s.charAt(first)!=s.charAt(last))
+                return false;
+             else{
+                 first++;
+                 last--;
+             }
+         }
+        return true;
+    }
+    
 }
