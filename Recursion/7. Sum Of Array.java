@@ -19,6 +19,6 @@ class Get
     
         int ans = helper(arr,startIndex+1);
         
-        return arr[startIndex] + ans;    
+        return arr[startIndex] + ans;  
     }
 }
