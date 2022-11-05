@@ -12,7 +12,7 @@ class Solution {
     
     void helper(int i, String digits,List<String> ans,StringBuffer store,String[] str)
     {
-        if(i>=digits.length())
+        if(i==digits.length())
         {
             ans.add(store.toString());
             return;
@@ -30,3 +30,15 @@ class Solution {
         }
     }
 }
+T.C :- O(4^n), where n is the number of digits in the input number.
+       Each digit has 3 or 4 characters and for each char there are 3 or4 option of another digit character
+       
+       Example :- 79
+                  7(pqrs)9(wxyz)
+           
+           -p(wxyz) = pw,px,py,pz
+           -q(wxyz) = qw,qx,qy,qz
+           -r(wxyz) = rw,rx,ry,rz
+           -s(wxyz) = sw,xx,sy,sz
+           
+           i.e. 4^2 = 16
