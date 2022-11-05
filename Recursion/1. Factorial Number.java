@@ -7,3 +7,4 @@ class Solution{
         return N * factorial(N-1);
     }
 }
+T.C :- O(n) :- for both iterative and recursive solution
