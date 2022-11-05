@@ -29,7 +29,7 @@ class Solution {
         helper(start+1,candidate,target,sum,ans,subset);
     }
 }
-T.C :- O(2^target  *  k)  // k is the average length/size of subset 
+T.C :- O(2^target  *  k)  // k is the average length/size of subset because we are putting subset list to ans list which is not a constant time
   
   /////////////////////////////////////////////////////////////////////////or///////////////////////////////////////////////////////////
   
