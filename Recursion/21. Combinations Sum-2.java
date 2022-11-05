@@ -1,3 +1,8 @@
+1. BruteForce :- increase index+1 after include
+              :- use set data structure for remove duplicacy
+
+2. Optimal :- without using set data structure by skiping those element which are repeating
+
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> ans = new ArrayList<>();
