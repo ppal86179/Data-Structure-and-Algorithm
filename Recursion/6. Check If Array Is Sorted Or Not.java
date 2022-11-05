@@ -19,7 +19,8 @@ class Solution {
         return false;
         
         //recursion
-        boolean ans = helper(arr,Startindex+1);
-        return ans;
+//         boolean ans = helper(arr,Startindex+1);
+//         return ans;
+        return helper(arr,Startindex+1);
     }
 }
