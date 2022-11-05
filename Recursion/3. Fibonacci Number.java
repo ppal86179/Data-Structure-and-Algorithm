@@ -9,3 +9,5 @@ class Solution{
         return fib(n-1) + fib(n-2);
     }
 }
+T.C :- O(2^n)
+S.C :- O(n)
