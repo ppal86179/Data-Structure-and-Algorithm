@@ -1,13 +1,13 @@
-//Eclipse-->recursion
+package Recursion;
 
-class Solution{
-  public static String replaceCharacter(String input, char c1, char c2)
+public class Replace_character {
+
+	public static String replaceCharacter(String input, char c1, char c2)
 	{
 		if(input.length()<=1)
 		{
 			if(input.charAt(0)==c1)
 			{
-//				String s = "";
 				return ""+c2;
 			}
 			else
@@ -20,4 +20,11 @@ class Solution{
 		else
 			return input.charAt(0)+store.substring(0);
 	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println(replaceCharacter("abacd",'a','x'));
+	}
+
 }
+OUTPUT :- xbxcd
