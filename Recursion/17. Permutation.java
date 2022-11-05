@@ -23,7 +23,7 @@ class Solution {
         }
     }
 }
-T.C:- n!(for generating all permutation) * n(for map loop)
+T.C:- n!(for generating all permutation) * n(for running loop from i=0 to nums.length)
 S.C :- EXTRA SPACE :- n(for subset data structure) + n(for map data structure)
       :- Auxillary Space :- recursion stack i.e. O(n)
         
@@ -56,3 +56,5 @@ class Solution {
 	    	    nums[j]=t;
 	    }
 }
+T.C :- n! * n
+S.C :- Auxillary Space - O(n)
