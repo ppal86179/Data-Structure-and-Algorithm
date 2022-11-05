@@ -29,3 +29,5 @@ class Solution {
 	    	    nums[j]=t;
 	    }
 }
+T.C :- n! * n
+S.C :- O(n)[Auxillary Stack Space]
