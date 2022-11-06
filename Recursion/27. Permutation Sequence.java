@@ -30,8 +30,7 @@ class Solution {
     void help(int index, int[] num, int n, int k, List<String> Tans)
     {
         
-        if(index==num.length)
-        {
+        if(index==num.length){
             StringBuffer store = new StringBuffer();
             for(int i=0; i<n; i++)
             {
