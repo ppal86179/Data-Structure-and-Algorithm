@@ -30,7 +30,7 @@ class Solution {
         
         //if nums[index] was already picked simply call recursion for index+1
         if(alreadyPicked[index]==1)
-            return helper(nums,index+1,bucketNum,bucketSum,targetSum,k,alreadyPicked);
+           return helper(nums,index+1,bucketNum,bucketSum,targetSum,k,alreadyPicked);
         
         //if nums[index] was not picked by previously calls -->we have two options, a.include b.exclude
         else
