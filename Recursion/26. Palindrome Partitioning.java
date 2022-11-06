@@ -8,8 +8,7 @@ class Solution {
     void help(int index, String s, List<String> path, List<List<String>> ans)
     {
         //BASE CASE
-        if(index==s.length())
-        {
+        if(index==s.length()){
             ans.add(new ArrayList(path));
             return;
         }
