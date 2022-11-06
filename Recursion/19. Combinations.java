@@ -44,6 +44,12 @@ class Solution {
     void helper(int start, int n, int k,List<List<Integer>> ans, List<Integer> subset)
     {
         
+//         if(k==size){
+//             ans.add(new ArrayList(subset));
+//             return;
+//         }
+//         if(start>n)return;
+	  ////////////////////////////////////or
         if(start>n)
         {
             if(k==0)
