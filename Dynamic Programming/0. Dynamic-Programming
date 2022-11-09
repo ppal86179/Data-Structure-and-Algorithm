@@ -1,0 +1,11 @@
+1. Top-Down :- Recursion + Memoization
+              a. Create dp[] array
+              b. Store in dp[] and then return
+              c. check dp[] if ith or nth element ans is already calculated or not after Base case
+ 
+2. Bottom-Up :- Tabulation
+              a. Create dp[] array
+              b. observe Base Case
+              c. change function call to dp[] inside the loop
+              
+3. Space Optimization
