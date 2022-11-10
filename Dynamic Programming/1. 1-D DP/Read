@@ -1,0 +1,54 @@
+How To Identify Problem That this problem is DP problem 
+
+//Whenever the questions says  -     1.Count the total no. of ways
+                                     2.Sometime there are multiple ways of doing something the find Minimum or maximum
+                                     
+Generally in this kind of questions whe have to apply recursion, But why???????
+because when we say 'distinct ways' that means how many ways are there means we have to try "All possible ways"
+
+//Recursion --> Try All Possible Ways 
+                      /    \
+                     /      \
+                    /        \
+                 Count      maximum
+               total no.      or
+               ways         minimum
+  
+  Now Step first should be the find this problem is recursive or not then we need to think Dp
+  
+  //Example:- Climbing Stairs
+            You are climbing a staircase. It takes n steps to reach the top.
+            Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+            
+      n = 3
+          1 step + 1 step + 1 step   ------> 1st way
+          1 step + 2 step            ------> 2nd way
+          2 step + 1 step            ------> 3rd way
+
+we can see that for climbing from 0th stair to nth stair there are total 3 ways that means we need to try all Possible ways to reach to nth stair
+
+SHORTCUT TRICK :- 
+Step 1 :- Try to Represent in term of index
+Step 2 :- Do all the possible stuff in that index According to the problem statement
+Step 3 :- if questions syas --> count (count all stuff)
+                            --> best ways (minimum or maximum)
+                            
+ Example :- in climbing stair questions we have seen that this problem is recursive in nature
+
+Step 1:- we can represent stairs as index that means 0 stair is 0th index , 1st stairis 1st index and so on.....
+               stair - 0  1  2  3  4......n
+               index - 0  1  2  3  4......index
+               
+f(index) --> this function will give me the no. of ways to reach from '0' to 'index'
+
+step 2:- at that index we have two options either take one jump or two jump 
+that means consider we are at 4th stair means index = 4
+how can we reach to that stair either from 3rd stair(1 jump) or 2nd stair(2 jump)
+
+      one way = f(index-1)
+      second way = f(index-2)
+step 3:- count total no. of ways 
+          ans = f(index-1) + f(index-2)
+          
+ //Base Case :- if index==0 there is only one way(stand)
+                if index==1 we have only one way i.e. by jumping from 0th stair
