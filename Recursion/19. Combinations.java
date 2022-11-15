@@ -38,33 +38,33 @@ class Solution {
         
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> subset = new ArrayList<>();
-        helper(1,n,k,ans,subset);
+        helper(1,n,0,k,ans,subset);
         return ans;
     }
-    void helper(int start, int n, int k,List<List<Integer>> ans, List<Integer> subset)
+    void helper(int start, int n, int size,int k,List<List<Integer>> ans, List<Integer> subset)
     {
         
-//         if(k==size){
-//             ans.add(new ArrayList(subset));
-//             return;
-//         }
-//         if(start>n)return;
-	  ////////////////////////////////////or
-        if(start>n)
-        {
-            if(k==0)
-            {
-                ans.add(new ArrayList(subset));
-            }
+        // if(start>n)
+        // {
+        //     if(size==k)
+        //     {
+        //         ans.add(new ArrayList(subset));
+        //     }
+        //     return;
+        // }
+        
+        if(k==size){
+            ans.add(new ArrayList(subset));
             return;
         }
+        if(start>n)return;
         
         //include
         subset.add(start);
-        helper(start+1,n,k-1,ans,subset);
+        helper(start+1,n,size+1,k,ans,subset);
         
-       //exclude
+        //exclude
         subset.remove(subset.size()-1);
-        helper(start+1,n,k,ans,subset);
+        helper(start+1,n,size,k,ans,subset);
     }
 }
