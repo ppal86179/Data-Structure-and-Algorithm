@@ -1,4 +1,4 @@
-Solution - if we rob first house then we can't rob last house and and if we rob last house we can;t rob first house
+Solution - if we rob first house then we can't rob last house and and if we rob last house we can't rob first house
            our previous solution of question House Robber 1 will work fine if we pass array without first element and then pass array without last element and return 
            maximum of them
            
