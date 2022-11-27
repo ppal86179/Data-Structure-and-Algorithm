@@ -15,7 +15,7 @@ class solve {
                 Nodecolor[curr] = i;
                 if(help(curr+1,graph,m,n,Nodecolor))
                 return true;
-                
+                else
                 Nodecolor[curr] = -1;
             }
         }
