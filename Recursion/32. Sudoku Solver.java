@@ -37,7 +37,7 @@ class Solution {
                 }
             }
         }
-      //if we reached here means our board if filled return true
+      //if we reached here means our board is filled return true
         return true;
     }
     boolean isSafe(int row,int col,char val,char[][] board)
