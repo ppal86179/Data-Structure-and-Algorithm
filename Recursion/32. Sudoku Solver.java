@@ -59,4 +59,4 @@ class Solution {
         return true;
     }
 }
-T.C :- O(9^m*n), 9 possible numbers for m*n cells
+T.C :- O(9^(n^2)), 9 possible numbers for each n^2 cells
