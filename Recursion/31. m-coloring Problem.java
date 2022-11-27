@@ -7,7 +7,8 @@ class solve {
     }
     public boolean help(int curr,boolean graph[][],int m,int n,int Nodecolor[]){
         
-        if(curr==n)return true;
+        if(curr==n)
+            return true;
         
         for(int i=0; i<m; i++){
             if(checkColor(graph,Nodecolor,curr,i)){
