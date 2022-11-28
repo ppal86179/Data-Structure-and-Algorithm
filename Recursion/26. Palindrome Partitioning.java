@@ -36,3 +36,7 @@ class Solution {
         return true;
     }
 }
+Time Complexity: O( (2^n) *k*(n/2) )
+
+Reason: O(2^n) to generate every substring and O(n/2)  to check if the substring generated is a palindrome. 
+        O(k) is for inserting the palindromes in another data structure, where k  is the average length of the palindrome list.
