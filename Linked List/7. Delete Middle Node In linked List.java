@@ -26,6 +26,8 @@ class Solution {
         // return head;
         
     //2. Optimal Approach
+    
+    if(head==null || head.next==null)return null;
         Node fast = head;
         Node slow = head;
         Node prev = null;
